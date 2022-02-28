@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Search GitHub Lett</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <section class="hero is-dark is-medium is-bold">
+                <div class="hero-head">
+                    <!-- NavBar -->
+                    <nav class="navbar">
+                        <div class="container">
+                            <div class="navbar-brand">
+                                <a class="navbar-item" href="#">
+                                    <img
+                                        src="https://bulma.io/images/bulma-type-white.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    role="button"
+                                    class="navbar-burger"
+                                    aria-label="menu"
+                                    aria-expanded="false"
+                                    data-target="navbarBasicExample"
+                                >
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                </a>
+                            </div>
+
+                            <div id="navbarBasicExample" class="navbar-menu">
+                                <div class="navbar-end">
+                                    <a class="navbar-item" href="index.html"
+                                        >Inicio</a
+                                    >
+                                    <a class="navbar-item" href="sobre.html"
+                                        >Sobre nós</a
+                                    >
+                                    <a class="navbar-item" href="busca.html"
+                                        >Buscar Repositorio</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <!-- Body -->
+            <section class="hero-body">
+                <div class="container">
+                    <h1 class="title has-text-centered">
+                        Buscar respositorio GitHub
+                    </h1>
+                </div>
+            </section>
+            <section class="hero-body">
+                <div>
+                    <div class="field has-addons has-addons-centered">
+                        <div class="control">
+                            <input
+                                class="input"
+                                type="text"
+                                placeholder="Nome do repositorio"
+                                id="nome"
+                            />
+                        </div>
+                        <div class="control">
+                            <a class="button is-info" onclick="busca()">
+                                Buscar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        id="div-principal"
+                        class="container hero-body is-widescreen"
+                    >
+                        <div>
+                            <div class="field has-addons has-addons-left">
+                                <div class="control is-widescreen">
+                                    <input
+                                        class="input is-rounded"
+                                        type="text"
+                                        placeholder="Filtrar repositorios"
+                                        id="filtro"
+                                        onchange="filtrar()"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="error" class="has-text-centered"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="hero-foot">
+                <footer class="footer">
+                    <div class="content has-text-centered">
+                        <p>
+                            &copy; 2022 Desenvolvido por
+                            <a href="#">Solange B F Neto</a>
+                        </p>
+                    </div>
+                </footer>
+            </section>
+        </div>
+    </body>
+</html>
