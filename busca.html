@@ -43,13 +43,23 @@
                             <div id="navbarBasicExample" class="navbar-menu">
                                 <div class="navbar-end">
                                     <a class="navbar-item" href="index.html"
-                                        >Inicio</a
+                                        ><span class="icon-text">
+                                            <span class="icon">
+                                                <i class="fas fa-home"></i>
+                                            </span>
+                                            <span>Home</span>
+                                        </span></a
                                     >
                                     <a class="navbar-item" href="sobre.html"
                                         >Sobre nós</a
                                     >
                                     <a class="navbar-item" href="busca.html"
-                                        >Buscar Repositorio</a
+                                        ><span class="icon-text">
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                            <span>Repositórios</span>
+                                        </span></a
                                     >
                                 </div>
                             </div>
@@ -72,7 +82,7 @@
                             <input
                                 class="input"
                                 type="text"
-                                placeholder="Nome do repositorio"
+                                placeholder="Nome do repositório"
                                 id="nome"
                             />
                         </div>
@@ -87,11 +97,14 @@
                     <div id="" class="container is-widescreen">
                         <div>
                             <div class="field has-addons has-addons-left">
-                                <div class="control is-widescreen">
+                                <div
+                                    class="control is-widescreen pt-5 pl-5"
+                                    id="filtroBusca"
+                                >
                                     <input
                                         class="input is-rounded"
                                         type="text"
-                                        placeholder="Filtrar repositorios"
+                                        placeholder="Filtrar repositórios"
                                         id="filtro"
                                         onchange="filtrar()"
                                     />

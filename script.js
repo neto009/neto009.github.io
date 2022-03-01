@@ -32,7 +32,7 @@ const busca = (url) => {
                 document.getElementById("tamanho").innerHTML = "";
                 document.getElementById(
                     "div-principal"
-                ).innerHTML = `<p class="is-warning message is-medium has-text-centered">Repositorio não encontrado!</p>`;
+                ).innerHTML = `<p class="message is-medium has-text-centered"><strong>Repositorio não encontrado!</strong></p>`;
             });
     };
     return new Promise(promiseCallback);
