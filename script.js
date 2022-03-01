@@ -21,11 +21,22 @@ const busca = (url) => {
 
                     document.getElementById(
                         posicao
-                    ).innerHTML = `<p>Repositorio: <a href="${data[posicao].html_url}">${data[posicao].name}</a></p><p>Linguagem: ${data[posicao].language}</p> <p>Exibição: ${data[posicao].visibility}</p><br>`;
+                    ).innerHTML = `<article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                <img src="https://i.ibb.co/R29bg3k/Github.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>Repositorio: <a href="${data[posicao].html_url}">${data[posicao].name}</a></p><p>Linguagem: ${data[posicao].language}</p> <p>Exibição: ${data[posicao].visibility}</p>
+                                </div>
+                            </div>
+                        </article>`;
                 });
                 document.getElementById(
                     "tamanho"
-                ).innerHTML = `<p class="tag is-success is-light">Foram encontrados ${data.length} repositorios!</p>`;
+                ).innerHTML = `<p class="tag is-success is-light">Foram encontrados ${data.length} repositórios!</p>`;
             })
             .catch((resultado) => {
                 document.getElementById("div-principal").innerHTML = "";
