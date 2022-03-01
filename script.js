@@ -36,7 +36,7 @@ const busca = (url) => {
                 });
                 document.getElementById(
                     "tamanho"
-                ).innerHTML = `<p class="tag is-success is-light">Foram encontrados ${data.length} repositórios!</p>`;
+                ).innerHTML = `<p class="tag is-success is-light is-large">Foram encontrados ${data.length} repositórios!</p>`;
             })
             .catch((resultado) => {
                 document.getElementById("div-principal").innerHTML = "";
