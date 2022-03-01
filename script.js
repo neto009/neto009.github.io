@@ -11,6 +11,7 @@ const busca = (url) => {
             })
             .then((resultado) => {
                 data = resultado;
+                document.getElementById("div-principal").innerHTML = "";
                 data.forEach((elemento, posicao) => {
                     var divPrincipal = document.getElementById("div-principal");
                     var criarElemento = document.createElement("div");
@@ -27,9 +28,11 @@ const busca = (url) => {
                 ).innerHTML = `<p class="tag is-success is-light">Foram encontrados ${data.length} repositorios!</p>`;
             })
             .catch((resultado) => {
+                document.getElementById("div-principal").innerHTML = "";
+                document.getElementById("tamanho").innerHTML = "";
                 document.getElementById(
-                    "error"
-                ).innerHTML = `<p class="is-warning message is-medium">Repositorio não encontrado!</p>`;
+                    "div-principal"
+                ).innerHTML = `<p class="is-warning message is-medium has-text-centered">Repositorio não encontrado!</p>`;
             });
     };
     return new Promise(promiseCallback);
