@@ -20,8 +20,11 @@ const busca = (url) => {
 
                     document.getElementById(
                         posicao
-                    ).innerHTML = `<p>Repositorio: <a href="${data[posicao].html_url}">${data[posicao].name}</a></p> <p>Exibição: ${data[posicao].visibility}</p><br>`;
+                    ).innerHTML = `<p>Repositorio: <a href="${data[posicao].html_url}">${data[posicao].name}</a></p><p>Linguagem: ${data[posicao].language}</p> <p>Exibição: ${data[posicao].visibility}</p><br>`;
                 });
+                document.getElementById(
+                    "tamanho"
+                ).innerHTML = `<p class="tag is-success is-light">Foram encontrados ${data.length} repositorios!</p>`;
             })
             .catch((resultado) => {
                 document.getElementById(
