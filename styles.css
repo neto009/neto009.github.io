@@ -16,6 +16,6 @@ body {
 } */
 
 .hero-landing {
-    background: url(/img/main.jpg) center;
+    background: url(../img/main.jpg) center;
     background-size: cover;
 }
