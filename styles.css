@@ -19,3 +19,11 @@ body {
     background: url(../img/main.jpg) center;
     background-size: cover;
 }
+
+.div-pai {
+    height: 100vh;
+}
+
+.div-principal {
+    min-height: 100%;
+}
