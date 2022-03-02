@@ -16,6 +16,7 @@ const busca = (url) => {
                 data.forEach((elemento, posicao) => {
                     var divPrincipal = document.getElementById("div-principal");
                     var criarElemento = document.createElement("div");
+
                     criarElemento.id = posicao;
                     criarElemento.classList.add("box");
                     divPrincipal.appendChild(criarElemento);
@@ -37,7 +38,7 @@ const busca = (url) => {
                 });
                 document.getElementById(
                     "tamanho"
-                ).innerHTML = `<p class="tag is-success is-light is-large">Foram encontrados ${data.length} repositórios!</p>`;
+                ).innerHTML = `<p class="tag is-success is-light is-large">Foram encontrado(s) ${data.length} repositório(s)!</p>`;
             })
             .catch((resultado) => {
                 document.getElementById("div-principal").innerHTML = "";
@@ -52,6 +53,7 @@ const busca = (url) => {
 
 const filtrar = (filtro) => {
     var filtro = document.getElementById("filtro").value.toLowerCase().trim();
+
     const numberItems = data.filter(
         (elemento) => elemento.name.toLowerCase().indexOf(filtro) >= 0
     );
@@ -62,7 +64,7 @@ const filtrar = (filtro) => {
         document.getElementById(posicao).style.display = match ? "" : "none";
         document.getElementById(
             "tamanho"
-        ).innerHTML = `<p class="tag is-success is-light is-large">Foram encontrados ${numberItems.length} repositórios!</p>`;
+        ).innerHTML = `<p class="tag is-success is-light is-large">Foram encontrado(s) ${numberItems.length} repositório(s)!</p>`;
     });
 };
 
