@@ -59,3 +59,10 @@ const filtrar = (filtro) => {
         document.getElementById(posicao).style.display = match ? "" : "none";
     });
 };
+
+const showMenu = () => {
+    var burger = document.querySelector("#nav-burger");
+    var menu = document.querySelector("#nav-menu");
+    burger.classList.toggle("is-active");
+    menu.classList.toggle("is-active");
+};
