@@ -12,6 +12,7 @@ const busca = (url) => {
             .then((resultado) => {
                 data = resultado;
                 document.getElementById("div-principal").innerHTML = "";
+                document.getElementById("filtro").value = "";
                 data.forEach((elemento, posicao) => {
                     var divPrincipal = document.getElementById("div-principal");
                     var criarElemento = document.createElement("div");

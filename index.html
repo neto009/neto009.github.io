@@ -79,7 +79,7 @@
                 </div>
             </section>
             <section class="hero-body div-principal">
-                <div>
+                <div class="input-container">
                     <div class="field has-addons has-addons-centered">
                         <div class="control">
                             <input
@@ -95,24 +95,26 @@
                             </a>
                         </div>
                     </div>
+                    <div class="field has-addons has-addons-centered">
+                        <div class="control">
+                            <input
+                                class="input"
+                                type="text"
+                                placeholder="Filtrar repositórios"
+                                id="filtro"
+                                onchange="filtrar()"
+                            />
+                        </div>
+                        <div class="control">
+                            <a class="button is-info" onclick="filtrar()">
+                                Filtrar
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <div id="" class="container is-widescreen">
                         <div>
-                            <div class="field has-addons has-addons-left">
-                                <div
-                                    class="control is-widescreen pt-5 pl-5"
-                                    id="filtroBusca"
-                                >
-                                    <input
-                                        class="input is-rounded"
-                                        type="text"
-                                        placeholder="Filtrar repositórios"
-                                        id="filtro"
-                                        onchange="filtrar()"
-                                    />
-                                </div>
-                            </div>
                             <div class="field has-addons has-addons-left">
                                 <div
                                     id="tamanho"
@@ -124,7 +126,9 @@
                     <div
                         id="div-principal"
                         class="container is-widescreen"
-                    ></div>
+                    >
+                        <span class="has-text-centered">Pesquise acima!</span>
+                    </div>
                 </div>
             </section>
             <section class="hero-foot">
