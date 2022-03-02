@@ -52,11 +52,17 @@ const busca = (url) => {
 
 const filtrar = (filtro) => {
     var filtro = document.getElementById("filtro").value.toLowerCase().trim();
+    const numberItems = data.filter(
+        (elemento) => elemento.name.toLowerCase().indexOf(filtro) >= 0
+    );
 
     data.forEach((elemento, posicao) => {
         var conteudo = data[posicao].name;
         var match = conteudo.toLowerCase().indexOf(filtro) >= 0;
         document.getElementById(posicao).style.display = match ? "" : "none";
+        document.getElementById(
+            "tamanho"
+        ).innerHTML = `<p class="tag is-success is-light is-large">Foram encontrados ${numberItems.length} repositórios!</p>`;
     });
 };
 
