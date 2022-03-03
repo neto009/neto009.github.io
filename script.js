@@ -1,7 +1,7 @@
 var data = [];
 
 const busca = (url) => {
-    var url = document.getElementById("nome").value;
+    var url = document.getElementById("nome").value.trim();
     const promiseCallback = (resolve, reject) => {
         fetch(`https://api.github.com/orgs/${url}/repos?per_page=50&type=owner`)
             .then((response) => {
