@@ -42,7 +42,7 @@ As tecnologias utilizadas para as o desenvolvimento desse projeto foram:
 -   Exiba na tela 50 resultados,
 -   Readme do projeto com breve descrição.
 
-Repositório: [neto009.github.io][dill] on GitHub.
+Repositório: [neto009][dill] on GitHub.
 
 ```
 Entrega
