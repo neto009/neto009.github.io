@@ -1,6 +1,6 @@
-<p align="center"><img src="https://cdn-images-1.medium.com/max/1200/1*WQHVgtojh9L16gR8YE1ghg.jpeg"width="60%" height="80%" /></p>
-
 # Teste Estágio Fullstack
+
+<p align="center"><img src="https://cdn-images-1.medium.com/max/1200/1*WQHVgtojh9L16gR8YE1ghg.jpeg"width="60%" height="80%" /></p>
 
 ## _Lett_
 
@@ -42,7 +42,7 @@ As tecnologias utilizadas para as o desenvolvimento desse projeto foram:
 -   Exiba na tela 50 resultados,
 -   Readme do projeto com breve descrição.
 
-Repositório: [neto009][dill] on GitHub.
+Repositórios: [neto009][dill] on GitHub.
 
 ```
 Entrega
