@@ -35,6 +35,10 @@ body {
     margin-bottom: 25px;
 }
 
+.card {
+    height: 100%;
+}
+
 @media only screen and (min-width: 600px) {
     .input-container {
         display: flex;
